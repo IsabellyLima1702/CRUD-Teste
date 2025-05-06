@@ -3,10 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./main.js" hrefer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/main.js" defer type="module"></script> <!--Interage com o layout-->
+
     <title>CRUD FRONT-END</title>
 </head>
 <body>
+    <header>
+        <img src="./img/logo-senai.png" alt="logo Senai">
+        <input type="text" id="nome-contato" placeholder="Digite o nome do contato">
+        <button class="button show" id="novo-contato">Novo Contato</button>
+    </header>
     
+    <main class="card-show">
+        <div class="container" id="container"></div>
+
+        <form>
+            <div class="preview">
+                <input class="preview-input" id="foto" type="file" accept="image/*">
+                <label class="preview-label" for="foto"></label>
+                <img src="" class="preview-image" id="preview-image">
+            </div>
+            
+            <div class="input-container">
+                <div class="input">
+                    <label>Nome</label>
+                    <!-- required significa que todos os campos precisam ser preenchidos -->
+                    <input type="text" class="input-text" id="nome" required>
+                </div>
+                <div class="input">
+                    <label>Email</label>
+                    <input type="email" class="input-text" id="email" required>
+                </div>
+
+                <div class="input">
+                    <label>Celular</label>
+                    <input type="text" class="input-text" id="celular" required>
+                </div>
+
+                <div class="input">
+                    <label>Endereço</label>
+                    <input type="text" class="input-text" id="endereco" required>
+                </div>
+
+                <div class="input">
+                    <label>Cidade</label>
+                    <input type="text" class="input-text" id="cidade" required>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="button" class="button" id="editar">Editar</button>
+                <button type="button" class="button" id="deletar">Deletar</button>
+                <button type="button" class="button show" id="salvar">Salvar</button>
+                <button type="button" class="button show" id="cancelar">Cancelar</button>
+            </div>
+        
+        </form>
+            <!-- <div class="card-contato">
+                <img src="./img/avatar1.avif" alt="Avatar">
+                <h2>Mário</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar3.avif" alt="Avatar">
+                <h2>João</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar10.avif" alt="Avatar">
+                <h2>Oscar</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar5.avif" alt="Avatar">
+                <h2>Silvia</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar9.avif" alt="Avatar">
+                <h2>Jonathan</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar12.avif" alt="Avatar">
+                <h2>Carlos</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar8.avif" alt="Avatar">
+                <h2>Lídia</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar6.avif" alt="Avatar">
+                <h2>Ana Maria</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar4.avif" alt="Avatar">
+                <h2>Mário</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar11.avif" alt="Avatar">
+                <h2>Ana Maria</h2>
+                <p>(11) 9 7171-4545</p>
+            </div>
+
+            <div class="card-contato">
+                <img src="./img/avatar7.avif" alt="Avatar">
+                <h2>Mário</h2>
+                <p>(11) 9 7171-4545</p>
+            </div> -->
+
+        </div>
+    </main>
 </body>
 </html>
