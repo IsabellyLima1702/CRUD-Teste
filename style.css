@@ -137,11 +137,16 @@ main.form-show form{
     padding-left: 16px;
 }
 
-
-.button{
-    display: none;
+.button-container{
+    display: flex;
+    width: 100%;
+    padding-left: 24.2%;
+    gap: 10%;
+}
+.button.show{
+    display: block;
     height: 48px;
-    min-width: 1000px;
+    min-width: 110px;
     padding: 0 8px;
     background-color: red;
     color: white;
@@ -150,6 +155,6 @@ main.form-show form{
     cursor: pointer;
 }
 
-.button.show{
-    display: block;
+.button{
+    display: none;
 }
